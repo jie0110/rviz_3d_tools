@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rviz_3d_tools</name>
+  <version>1.0.0</version>
+  <description>
+    RViz plugins for 3D Pose Estimate and 3D Nav Goal.
+    Supports full XYZ position with yaw orientation.
+  </description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <!-- Build -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rviz</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+
+  <!-- Run -->
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <!-- 注册 RViz 插件 -->
+  <export>
+    <rviz plugin="${prefix}/plugin_description.xml"/>
+  </export>
+</package>

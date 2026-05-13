@@ -1,0 +1,23 @@
+<library path="lib/librviz_3d_tools">
+
+  <class name="rviz_3d_tools/Pose3DTool"
+         type="rviz_3d_tools::Pose3DTool"
+         base_class_type="rviz::Tool">
+    <description>
+      3D Pose Estimate Tool — click and drag to set initial pose.
+      Publishes to /initialpose with full 3D position (including Z).
+    </description>
+    <!-- <icon filename="icons/pose3d.png"/> -->
+  </class>
+
+  <class name="rviz_3d_tools/Goal3DTool"
+         type="rviz_3d_tools::Goal3DTool"
+         base_class_type="rviz::Tool">
+    <description>
+      3D Nav Goal Tool — click and drag to send a navigation goal.
+      Publishes to /goal_3d with full 3D position (including Z).
+    </description>
+    <!-- <icon filename="icons/goal3d.png"/> -->
+  </class>
+
+</library>
